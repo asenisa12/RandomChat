@@ -33,26 +33,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>WebContent/css/bootstrap.css</name>
-			<type>1</type>
-			<location>/home/asen/Java/bootstrap-3.3.2-dist/css/bootstrap.css</location>
-		</link>
-		<link>
-			<name>WebContent/css/bootstrap.css.map</name>
-			<type>1</type>
-			<location>/home/asen/Java/bootstrap-3.3.2-dist/css/bootstrap.css.map</location>
-		</link>
-		<link>
-			<name>WebContent/libs/bootstrap.js</name>
-			<type>1</type>
-			<location>/home/asen/Java/bootstrap-3.3.2-dist/js/bootstrap.js</location>
-		</link>
-		<link>
-			<name>WebContent/libs/jquery-2.1.1.js</name>
-			<type>1</type>
-			<location>/home/asen/Java/examJS/WebContent/libs/jquery-2.1.1.js</location>
-		</link>
-	</linkedResources>
 </projectDescription>
