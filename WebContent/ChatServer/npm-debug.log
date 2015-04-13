@@ -1,0 +1,81 @@
+info it worked if it ends with ok
+verbose cli [ 'node', '/usr/bin/npm', 'install' ]
+info using npm@1.1.4
+info using node@v0.6.12
+verbose config file /home/asen/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+verbose caching /home/asen/Java/RandomChat/WebContent/ChatServer/package.json
+verbose loadDefaults RealTimeWebChat@0.0.0
+verbose readDependencies: using package.json deps
+verbose where, deps [ '/home/asen/Java/RandomChat/WebContent/ChatServer',
+verbose where, deps   [ 'socket.io', 'express', 'jade' ] ]
+verbose from cache /home/asen/Java/RandomChat/WebContent/ChatServer/package.json
+info preinstall RealTimeWebChat@0.0.0
+verbose from cache /home/asen/Java/RandomChat/WebContent/ChatServer/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'socket.io@latest', null ]
+silly cache add: name, spec, args [ undefined, 'socket.io@latest', [ 'socket.io@latest', null ] ]
+verbose parsed url { pathname: 'socket.io@latest',
+verbose parsed url   path: 'socket.io@latest',
+verbose parsed url   href: 'socket.io@latest' }
+silly cache add: name, spec, args [ 'socket.io', 'latest', [ 'socket.io', 'latest' ] ]
+verbose parsed url { pathname: 'latest', path: 'latest', href: 'latest' }
+verbose addNamed [ 'socket.io', 'latest' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'socket.io', 'latest' ]
+verbose raw, before any munging socket.io
+verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+verbose url resolved https://registry.npmjs.org/socket.io
+http GET https://registry.npmjs.org/socket.io
+verbose cache add [ 'express@latest', null ]
+silly cache add: name, spec, args [ undefined, 'express@latest', [ 'express@latest', null ] ]
+verbose parsed url { pathname: 'express@latest',
+verbose parsed url   path: 'express@latest',
+verbose parsed url   href: 'express@latest' }
+silly cache add: name, spec, args [ 'express', 'latest', [ 'express', 'latest' ] ]
+verbose parsed url { pathname: 'latest', path: 'latest', href: 'latest' }
+verbose addNamed [ 'express', 'latest' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'express', 'latest' ]
+verbose cache add [ 'jade@latest', null ]
+silly cache add: name, spec, args [ undefined, 'jade@latest', [ 'jade@latest', null ] ]
+verbose parsed url { pathname: 'jade@latest',
+verbose parsed url   path: 'jade@latest',
+verbose parsed url   href: 'jade@latest' }
+silly cache add: name, spec, args [ 'jade', 'latest', [ 'jade', 'latest' ] ]
+verbose parsed url { pathname: 'latest', path: 'latest', href: 'latest' }
+verbose addNamed [ 'jade', 'latest' ]
+verbose addNamed [ null, null ]
+info addNameTag [ 'jade', 'latest' ]
+verbose raw, before any munging express
+verbose url resolving [ 'https://registry.npmjs.org/', './express' ]
+verbose url resolved https://registry.npmjs.org/express
+http GET https://registry.npmjs.org/express
+verbose raw, before any munging jade
+verbose url resolving [ 'https://registry.npmjs.org/', './jade' ]
+verbose url resolved https://registry.npmjs.org/jade
+http GET https://registry.npmjs.org/jade
+ERR! Error: failed to fetch from registry: express
+ERR!     at /usr/share/npm/lib/utils/npm-registry-client/get.js:139:12
+ERR!     at cb (/usr/share/npm/lib/utils/npm-registry-client/request.js:31:9)
+ERR!     at Request._callback (/usr/share/npm/lib/utils/npm-registry-client/request.js:136:18)
+ERR!     at Request.callback (/usr/lib/nodejs/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:212:58)
+ERR!     at Request.emit (events.js:88:20)
+ERR!     at ClientRequest.<anonymous> (/usr/lib/nodejs/request/main.js:412:12)
+ERR!     at ClientRequest.emit (events.js:67:17)
+ERR!     at HTTPParser.onIncoming (http.js:1261:11)
+ERR!     at HTTPParser.onHeadersComplete (http.js:102:31)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/asen/Java/RandomChat/WebContent/ChatServer/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.8.0-44-generic
+ERR! command "node" "/usr/bin/npm" "install"
+ERR! cwd /home/asen/Java/RandomChat/WebContent/ChatServer
+ERR! node -v v0.6.12
+ERR! npm -v 1.1.4
+ERR! message failed to fetch from registry: express
+verbose exit [ 1, true ]
