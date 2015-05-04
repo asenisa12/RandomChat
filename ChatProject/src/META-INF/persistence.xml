@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+     version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
+     <persistence-unit name="Datasa">
+          <class>rest.Data</class>
+          <properties>
+               <property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+			<!-- create validate update
+			in production the value should be validate,
+			for DB migrations - use external tools, e.g. liquibase -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="javax.persistence.jdbc.user" value="app" />
+			<property name="javax.persistence.jdbc.password" value="" />
+			<!-- see http://db.apache.org/derby/papers/DerbyTut/ns_intro.html -->
+			<property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/07_SampleRest;create=true" />
+			<property name="hibernate.connection.autocommit" value="false"/>
+				
+
+          </properties>
+
+     </persistence-unit>
+</persistence>
